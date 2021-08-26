@@ -1,0 +1,16 @@
+<div>
+  <label for="id_in">Input ID: </label>
+  <input id="id_in" #id_in />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="get_image" (click)="add(id_in.value); id_in.value=''">
+    Search
+  </button>
+</div>
+<img class="imgcont" [src]="show_img">
+<div *ngIf="actionlog.messages.length">
+  <h2>LOG</h2>
+  <div *ngFor='let item of actionlog.messages'>
+    {{item}}
+  </div>
+</div>

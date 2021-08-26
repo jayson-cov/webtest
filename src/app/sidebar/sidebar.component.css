@@ -1,0 +1,14 @@
+.imgcont{
+  max-height: 90vh;
+  max-width: 90vw;
+  margin: 10px auto;
+}
+
+.get_image{
+  margin-left: 5px;
+}
+
+label{
+  font-family: arial;
+  font-weight: bold;
+}

@@ -1,0 +1,12 @@
+<div class="row">
+  <canvas #myCanvas width=600 height=400
+          (mousedown)="onDragStart($event)"
+          (mousemove)="onDrag($event)"
+          (mouseout)="mouseExited($event)"
+          (mouseup)="onDragExit($event)"
+          (wheel)="onScroll($event)"></canvas>
+  <p>{{str}}</p>
+</div>
+<div class="row">
+  <button (click)="rotateImage()">ROTATE</button>
+</div>
